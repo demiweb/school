@@ -1,0 +1,41 @@
+{%set
+gallery = {
+  slider: [
+    { img: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg', thumb: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg' },
+    { img: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg', thumb: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg' },
+    { img: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg', thumb: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg' },
+    { img: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg', thumb: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg' },
+    { img: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg', thumb: 'IMG-72e73ffa9b4848f5e193bf102e220272-V.jpg' }
+  ]
+}
+%}
+
+<!-- begin section -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid--align-items-center">
+      <div class="col col--6">
+        <h2 class="section__title title title--h1 title-img text-left">
+          Позиціонування АЗК
+          <img class="title-img__img js-lazy" alt="" src="" data-src="./img/bottle.svg"/>
+        </h2>
+
+        <div class="article">
+          <p>Підґрунтям у створенні школи АЗК стали духовно-моральні цінності команди та любов до дітей. Ми не команда матусь, яких не влаштовувала загальна школа чи садок, тому вони створили власний простір. Ми – команда викладачів-аспірантів з педагогічною освітою та професійним стажем, що бажає змінити наш світ на краще, що вірить в молоде покоління, що воно дійсно наше майбутнє, а майбутнє слід робити вже сьогодні. </p>
+
+          <p>Хто ж, як не дорослі мають навчити юних хлопців та дівчаток, як стати людиною з великої літери, а не просто бути середньостатистичним учнем, що мріє як не будь перебути уроки, звільнитися від надокучливих вчителів та побігти байдикувати вдома разом з гаджетами, чи в дворі з сусідськими розбишаками.  </p>
+
+          {{ mixins.btn(
+            title = 'Більше про заклад',
+            mod = ''
+          ) }}
+        </div>
+      </div>
+
+      <div class="col col--6">
+        {% include "partials/_gallery.html" %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end section -->

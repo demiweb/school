@@ -1,0 +1,37 @@
+.hero
+  position: relative
+  &__bg
+    +coverdiv
+    +cover
+    background-position: 50% 0%
+    background-color: $c-text
+    z-index: 1
+  &__inner
+    position: relative
+    z-index: 5
+    padding-top: rem(90)
+    padding-bottom: rem(175)
+  &__content-top-img
+    display: block
+    width: rem(90)
+    margin-bottom: rem(10)
+  &__upttl
+    text-transform: uppercase
+    font-weight: 400
+    font-size: em(14)
+    margin-bottom: rem(8)
+  &__title
+    margin-bottom: rem(10)
+  &__text
+    max-width: rem(540)
+    margin-bottom: rem(15)
+  &__img-bottom
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: rem(125)
+    z-index: 2
+    background-repeat: repeat-x
+    background-size: contain
+    background-position: 100% 100%

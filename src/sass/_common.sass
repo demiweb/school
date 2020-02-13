@@ -1,10 +1,9 @@
 html  
   font-size: $fz
-  line-height: 1.4
+  line-height: 1.5
   color: $c-text
   +reg
-  +sm
-    font-size: $fz-sm-px
+
 
 body
   background-color: $white  
@@ -20,4 +19,37 @@ body
   $this: &
   &--loaded:not(#{$this}--no-fade-in)
     animation: fadeIn 1s
+
+.two-btns
+  display: flex
+  &__btn
+    +notlast
+      margin-right: rem(12)
+
+.link
+  position: relative
+  color: $accent
+  font-weight: 700
+  display: inline-flex
+  align-items: center
+  &__arrow
+    display: inline-block
+    width: rem(15)
+    height: 1px
+    position: relative
+    margin-left: .5em
+    +before
+      width: 100%
+      height: 1px
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      right: 0
+      background-color: currentColor
+    +after
+      +icon-arrow(.6, .6, .07, currentColor, 225, em)
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translate(0, -50%) rotate(225deg)
     

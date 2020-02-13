@@ -1,5 +1,56 @@
 <!-- begin hero -->
 <section class="hero">
-  <h1>hello from hero</h1>
+  <div class="hero__bg js-lazy" data-background-image="./img/hero/{{ hero.bg }}"></div>
+
+  <div class="container">
+    <div class="hero__inner">
+      <div class="grid grid--align-items-center">
+        <div class="col col--7">
+          {% if hero.topImg %}
+          <img class="hero__content-top-img js-lazy" alt="" src="" data-src="./img/{{ hero.topImg }}"/>
+          {% endif %}
+
+          {% if hero.upttl %}
+          <div class="hero__upttl">{{ hero.upttl | safe }}</div>
+          {% endif %}
+
+          {% if hero.title %}
+          {#   {% if hero.h2 %}
+            <h2 class="hero__title title title--h1">{{ hero.title.title | safe }}</h2>
+            {% else %}
+            <h1 class="hero__title title title--h1">{{ hero.title.title | safe }}</h1>
+            {% endif %} #}
+
+            <h1 class="hero__title title title--h1">{{ hero.title | safe }}</h1>
+          {% endif %}
+
+          {% if hero.text %}
+          <div class="hero__text">{{ hero.text | safe }}</div>
+          {% endif %}
+
+          {% if hero.btns %}
+          <div class="hero__btns two-btns">
+            {% for i in hero.btns %}
+            <div class="two-btns__btn">
+              {{ mixins.btn(
+                title = i.title,
+                mod = i.mod
+              ) }}
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+        {% if hero.rightImage %}
+        <div class="col col--5">
+          <img class="js-lazy" alt="" src="" data-src="./img/hero/{{ hero.rightImage }}"/>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero__img-bottom js-lazy" data-background-image="./img/hero/grass.png"></div>
 </section>
 <!-- end hero -->

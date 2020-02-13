@@ -1,0 +1,19 @@
+.feature
+  display: flex
+  flex-direction: column
+  &__icon
+    width: rem(193)
+    height: rem(146)
+    +image('features/icon.png')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-size: rem(193) rem(146)
+    position: relative
+    margin-bottom: rem(15)
+    img
+      +vcenter
+  &__title
+    margin-bottom: rem(10)
+  &__content
+    flex-grow: 1
+    padding-bottom: rem(10)

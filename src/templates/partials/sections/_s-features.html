@@ -1,0 +1,60 @@
+{%set
+cards = [
+  {
+    img: 'cards/IMG-55e87dd0a07fdd78cbfae384455b7cb2-V.jpg',
+    title: 'Початкова школа',
+    text: 'Продовжується набір у 1, 2, 3 та 4 класи на 2019-2020 навчальний рік! Приєднуйтеся до нас!'
+  },
+  {
+    img: 'cards/10-(1).jpg',
+    title: 'Середня школа',
+    text: 'Продовжується набір у 1, 2, 3 та 4 класи на 2019-2020 
+навчальний рік! Приєднуйтеся до нас!'
+  },
+  {
+    img: 'cards/IMG-d5c93526af91567af551c1c75a36dc5a-V.jpg',
+    title: 'Дитячий садок',
+    text: 'Приватний садо
+к, якому можна довіряти – це дійсно дарунок 
+для матусі. '
+  },
+  {
+    img: 'cards/36.jpg',
+    title: 'Літній табір',
+    text: 'Пізнавальні виїзн
+і заходи, ігрові програми, спортивні змагання, французьська мова.'
+  }
+]
+%}
+
+<!-- begin section -->
+<section class="section">
+  <div class="container">
+
+    {{ mixins.title(
+      title = 'Що пропонує АЗК?',
+      img = 'paint.svg'
+    ) }}
+    
+
+    <div class="section__subttl">Наша альтернативна школа – це школа повного дня, ми зустрічаємося з дітьми близько 8.30 ранку та кажемо: «До завтра» о 19.00. Оскільки у нашому розпорядженні цілий день, ми встигаємо не лише навчатися, а й відпочивати, гратися, проводити творчі заняття. </div>
+    
+    <div class="section__block section__block--lg">
+      <div class="grid">
+        {% for i in cards %}
+        <div class="col col--3">
+          {{ mixins.card(
+              title = i.title,
+              img = i.img,
+              text = i.text,
+              button = { title: 'Записати дитину' }
+          ) }}
+        </div>
+        {% endfor %}      
+      </div>
+    </div>
+
+    {% include "partials/_features.html" %}
+  </div>
+</section>
+<!-- end section -->

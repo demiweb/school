@@ -1,8 +1,30 @@
-small
-  font-size: inherit
-
-h1, h2, h3, h4, h5, h6
-  font-weight: 400
-
 .title
-  +css-lock(21, 45, 320, 1399, font-size)
+  display: block
+  font-weight: 700
+  text-transform: uppercase
+  color: $c-title
+  line-height: 1
+  +font-title
+  &--h1
+    font-size: em(34)
+  &--h2
+    font-size: em(36)
+  &--h3
+    font-size: em(21)
+  &--h5
+    font-size: em(16)
+  &--reg
+    +reg
+  &--ttn
+    text-transform: none
+
+.title-img
+  flex-wrap: wrap
+  &__title
+    display: inline
+    vertical-align: middle
+  &__img
+    width: rem(60)
+    display: inline-block
+    vertical-align: middle
+    margin-left: .3em

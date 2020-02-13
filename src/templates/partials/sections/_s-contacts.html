@@ -1,0 +1,39 @@
+<!-- begin section -->
+<section class="section s-contacts">
+  <iframe class="s-contacts__map" src="" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3652522155503!2d30.50992231589771!3d50.50877039104175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d219ed91ef0f%3A0x59eeeda723ab37a0!2z0L_RgNC-0YHQvy4g0JPQtdGA0L7QtdCyINCh0YLQsNC70LjQvdCz0YDQsNC00LAsIDE00JMsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1581601486799!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+  <div class="container">
+    <div class="s-contacts__block contacts-block">
+      <h2 class="contacts-block__title title title--h2 title-reg"></h2>
+
+      <div class="contacts-block__subttl"></div>
+
+      <div class="contacts-block__contacts contacts">
+        <div class="contacts__item contact-item">
+          <div class="contact-item__icon">
+            {{ mixins.icon('pin') }}
+          </div>
+
+          <div class="contact-item__text">м. Київ, Оболонський район,
+вул. Героїв Сталінграду, 14-г</div>
+        </div>
+
+        <div class="contacts__item contact-item">
+          <div class="contact-item__icon">
+            {{ mixins.icon('telephone') }}
+          </div>
+
+          <div class="contact-item__text">
+            <a href="tel:0637102270">063 710 22 70</a>
+          </div>
+        </div>
+      </div>
+
+      {{ mixins.btn(
+        title = 'Зв’язатися з нами',
+        mod = ''
+      ) }}
+    </div>
+  </div>
+</section>
+<!-- end section -->

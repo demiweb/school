@@ -1,0 +1,14 @@
+.article
+  h1, h2, h3, h4, h5, h5
+    @extend .title
+    @extend .title--reg
+    @extend .title--ttn
+  h2
+    @extend .title--h3
+  p, ul, ol
+    +notlast
+      margin-bottom: rem(20)
+  a
+    &:not(.btn)
+      text-decoration: underline
+      color: $blue

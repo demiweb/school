@@ -1,0 +1,6 @@
+{% macro title(title, mod, img) %}
+<div class="section__title title-img{% if mod %} {{ mod }}{% endif %}">
+  <h2 class="title-img__title title title--h1">{{ title | safe }}</h2>
+  <img class="title-img__img js-lazy" alt="" src="" data-src="./img/{{ img }}"/>
+</div>
+{% endmacro %}

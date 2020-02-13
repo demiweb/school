@@ -1,0 +1,15 @@
+.nav
+  $this: &
+  font-size: em(22)
+  font-weight: 600
+  color: $black
+  ul
+    display: flex
+    align-items: center
+    justify-content: space-between
+  a
+    +tr(color .3s)
+    +hover
+      @extend #{$this}__current-item
+  &__current-item
+    color: $accent

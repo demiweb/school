@@ -1,0 +1,33 @@
+---
+title: home
+hero: {
+  bg: 'home.jpg',
+  topImg: 'pen.svg',
+  upttl: 'досі не можете знайти школу для своїх дітей?',
+  title: 'Альтернативний Західний Колегіум',
+  text: 'навчально-виховний комплекс, якій вміщує в себе початкову школу, 
+  групу продовженого дня, лінгво-школу, дитячий садок, курс підготовки
+  до школи, творчу майстерню, музичний клас та спортивні секції.',
+  btns: [
+    {
+      title: 'Записати дитину'
+    },
+    {
+      title: 'Більше про заклад',
+      mod: 'btn--transp'
+    }
+  ],
+  rightImage: '25758625.png'
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-features.html" %}
+  {% include "partials/sections/_s-what.html" %}
+  {% include "partials/sections/_s-gallery-home.html" %}
+  {% include "partials/sections/_s-news.html" %}
+  {% include "partials/sections/_s-seo.html" %}
+  {% include "partials/sections/_s-contacts.html" %}
+{% endblock %}

@@ -1,5 +1,80 @@
+{%set
+blocks = [
+  {
+    title: 'Послуги',
+    list: {
+      name: 'nav',
+      mod: '',
+      hasWrap: true,
+      list: [
+        { link: 'Початкова школа' },
+        { link: 'Дитячий садок' },
+        { link: 'Літній табір' }
+      ]
+    }
+  },
+  {
+    title: 'Клієнтам',
+    list: {
+      name: 'Контакти',
+      mod: '',
+      list: [
+        { link: 'Про нас' },
+        { link: 'Блог' },
+        { link: 'Наші вчителі' }
+      ]
+    }
+  },
+  {
+    title: '',
+    list: {
+      name: '',
+      hasWrap: true,
+      mod: 'nav nav--footer',
+      list: [
+        {
+          item: '<a href="tel:+380637102270">' + mixins.icon('telephone', 'contact__icon') + '+38 (063) 710 22 70</a>',
+          modItem: 'contact'
+        },
+        {
+          item: mixins.icon('pin', 'contact__icon') + 'м. Київ, Оболонський район, вул. Героїв Сталінграду, 14-г',
+          modItem: 'contact'
+        }
+      ]
+    }
+  }
+]
+%}
+
 <!-- begin footer -->
 <footer class="footer">
-  hello from footer
+  <div class="container">
+    <div class="grid">
+      <div class="col col--8">
+        <div class="footer__blocks">
+          <img class="footer__dots js-lazy" alt="" src="" data-src="./img/dots.svg"/>
+
+          {% for i in blocks %}
+          <div class="footer__block">
+            <h5 class="footer__title title title--h5 title--reg">{{ i.title | safe }}</h5>
+
+            {{ mixins.list(
+              name = i.list.name,
+              modifications = { wrap: i.list.mod, list: '', item: '', link: '' },
+              hasWrap = i.list.hasWrap,
+              list = i.list.list
+            ) }}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col col--4">
+        {% include "partials/_subscribe.html" %}
+      </div>
+    </div>
+
+    <div class="footer__copy">2020 © Усі права захищені.</div>
+  </div>
 </footer>
 <!-- end footer -->
