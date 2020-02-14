@@ -1,28 +1,19 @@
 .image
-  display: inline-block
-  font-size: 0
+  width: percentage(560 / 690)
+  padding-top: 80%
   position: relative
-  width: 560px
-  height: 100%
-  +cover
-  img
-    position: relative
-    z-index: 1
-  +before
-    +image('section-imgs/bg.png')
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    background-size: contain
+  margin-left: auto
+  &__img
     position: absolute
-    z-index: -1
-    bottom: rem(-14)
-    right: rem(50)
+    z-index: 1
+    top: 0
+    left: 0
+  &__bg
+    position: absolute
+    z-index: 0
+    bottom: -2%
+    left: -8%
     width: 100%
     height: 100%
-  +after
-    +image('section-imgs/mask.png')
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    background-size: 100% 100%
-    +coverdiv
-    z-index: 2
+    fill: $accent-aux
+

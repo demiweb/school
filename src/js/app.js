@@ -12,6 +12,8 @@ import sayHello from './lib/sayHello'
 import setHTMLClassNames from './components/setHTMLClassNames'
 import setLazy from './components/setLazy'
 
+import MaskedImage from './components/Image/MaskedImage'
+
 // import { NO_SCROLL } from './constants'
 
 class App {
@@ -21,6 +23,8 @@ class App {
     this.dom = {
       body: document.body,
     }
+
+    this.maskedImage = new MaskedImage(`.${classNames.maskedImages}`)
     // this.state = {
     //   hasMenuOpen: false,
     // }
@@ -52,6 +56,8 @@ class App {
 
   init() {
     this.initMethods()
+
+    this.maskedImage.init()
 
     // this.menu.init()
     // this.menu.onToggle = this.onMenuToggle.bind(this)

@@ -9,7 +9,7 @@
           <a
             href="./img/{{ i.img }}"
             class="swiper-slide gallery__img js-lazy"
-            data-background-image="./img/{{ i.img }}"
+            data-background-image="./img/gallery/{{ i.img }}"
             ></a>
           {% endfor %}
         </div>
@@ -29,7 +29,7 @@
       <div class="swiper-container js-slider" data-slider="thumbs">
         <div class="swiper-wrapper">
           {% for i in gallery.slider %}
-          <button class="swiper-slide gallery__thumb js-lazy" data-background-image="./img/{{ i.thumb }}"></button>
+          <button class="swiper-slide gallery__thumb js-lazy" data-background-image="./img/gallery/{{ i.thumb }}"></button>
           {% endfor %}
         </div>
       </div>
