@@ -1,0 +1,32 @@
+<!-- begin section -->
+<section class="section section--pt-sm">
+  <div class="container">
+    <div class="grid">
+      {% for i in range(0, 6) %}
+        <div class="col col--4">
+        {{ mixins.card(
+          mod = 'card--left card--long',
+          titleSm = 'Працьовита дитина — міф чи реальність в наш час?',
+          img = 'cards/P80911-161019.jpg',
+          text = 'Працьовитість — це та якість, що допоможе вашій дитині втілювати безліч ідей в реальність, отримувати задоволення від роботи, а не тільки чекати вихідних, жити самостійно, і не шукати чиєїсь матеріальної підтримки... ',
+          link = true
+        ) }}
+      </div>
+      {% endfor %}      
+    </div>
+
+    {{ mixins.list(
+      name = 'pagination',
+      modifications = { list: 'section__pagination pagination', item: '', link: '' },
+      list = [
+        { link: ' ', modLink: 'prev' },
+        { link: '1', modItem: 'pagination__current-item' },
+        { link: '2' },
+        { item: '<span>...</span>' },
+        { link: '14' },
+        { link: ' ', modLink: 'next' }
+      ]
+    ) }}
+  </div>
+</section>
+<!-- end section -->

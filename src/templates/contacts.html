@@ -1,0 +1,30 @@
+---
+title: contacts
+page: contacts
+hero: {
+  bg: 'contacts.jpg',
+  title: 'Контакти',
+  text: 'Телефонуйте за вказаним номером телефону або замовляйте зворотній дзвінок
+Або просто завітайте до нас особисто!',
+  btns: [
+    {
+      title: 'Замовити дзвінок'
+    }
+  ],
+  breadcrumbs: {
+    list: [
+      { link: 'Головна' },
+      { item: '-' },
+      { item: 'Контакти', modItem: 'breadcrumbs__current-item' }
+    ]
+  },
+  contacts: true
+}
+sContacts: { empty: true }
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-contacts.html" %}
+{% endblock %}

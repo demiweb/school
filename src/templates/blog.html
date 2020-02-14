@@ -1,0 +1,28 @@
+---
+title: blog
+page: blog
+hero: {
+  bg: 'blog.jpg',
+  title: 'Блог',
+  text: 'Нам подобається ділитися останніми новинами з нашої школи та
+розгладати цікаві дитячі теми у нашому блозі',
+  btns: [
+    {
+      title: 'Записати дитину'
+    }
+  ],
+  breadcrumbs: {
+    list: [
+      { link: 'Головна' },
+      { item: '-' },
+      { item: 'Блог', modItem: 'breadcrumbs__current-item' }
+    ]
+  }
+}
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_hero.html" %}
+  {% include "partials/sections/_s-blog.html" %}
+{% endblock %}

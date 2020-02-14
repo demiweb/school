@@ -5,6 +5,9 @@
     @extend .title--ttn
   h2
     @extend .title--h3
+    margin-bottom: rem(8)
+  h5
+    @extend .title--h5
   p, ul, ol
     +notlast
       margin-bottom: rem(20)
@@ -12,3 +15,13 @@
     &:not(.btn)
       text-decoration: underline
       color: $blue
+  ul
+    li
+      +list-bullet
+      position: relative
+      padding-left: rem(10)
+      &::before
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0

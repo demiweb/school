@@ -29,3 +29,24 @@
     display: inline-block
     vertical-align: middle
     margin-left: .3em
+
+blockquote, .blockquote
+  padding: rem(25)
+  position: relative
+  background-color: $white
+  +shadow
+  +before
+    +gradient
+    top: 0
+    bottom: 0
+    left: 0
+    position: absolute
+    width: 4px
+
+.blockquote
+  &--plain
+    box-shadow: none
+    +before
+      background-image: none
+      background-color: #efefef
+

@@ -1,0 +1,33 @@
+.pagination
+  text-align: center
+  li
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    vertical-align: middle
+    position: relative
+    margin-left: rem(4)
+    margin-right: rem(4)
+  a, span
+    display: flex
+    align-items: center
+    justify-content: center
+    height: rem(42)
+    min-width: rem(42)
+    border: 1px solid  #e2e2e2
+    border-radius: 50%
+    +tr(color .3s, border-color .3s)
+  a
+    +hover
+      color: $accent
+      border-color: $accent
+  &__current-item
+    a
+      color: $accent
+      border-color: $accent
+
+  .prev, .next
+    border: 0
+    display: inline-block
+    height: rem(15)
+    min-width: 0

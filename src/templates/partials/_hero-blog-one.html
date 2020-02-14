@@ -1,0 +1,25 @@
+<!-- begin hero -->
+<section class="hero hero--sm">
+  <div class="hero__wave"></div>
+
+  <div class="hero__bg js-lazy" data-background-image="./img/hero/blog-one.jpg"></div>
+
+  <div class="container">
+    {{ mixins.list(
+      name = 'breadcrumbs',
+      modifications = { list: 'hero__breadcrumbs breadcrumbs', item: '', link: '' },
+      list = [
+        { link: 'Головна' },
+        { item: '-' },
+        { link: 'Блог' },        
+        { item: '-' },
+        { item: 'Головний ворог у конфліктаз з дітьми', modItem: 'breadcrumbs__current-item' }
+      ]
+    ) }}
+
+    <div class="hero__inner">
+       <h1 class="hero__title title title--h1">Головний ворог у конфліктах з дітьми</h1>
+    </div>
+  </div>
+</section>
+<!-- end hero -->

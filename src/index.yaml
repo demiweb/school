@@ -2,3 +2,8 @@ ProjectTitle: school
 
 PageList:
 - file: home.html
+- file: about.html
+- file: blog-one.html
+- file: blog.html
+- file: contacts.html
+- file: high-school.html

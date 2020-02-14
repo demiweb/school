@@ -1,5 +1,6 @@
 ---
 title: home
+page: home
 hero: {
   bg: 'home.jpg',
   topImg: 'pen.svg',
@@ -19,13 +20,37 @@ hero: {
   ],
   rightImage: '25758625.png'
 }
+
+sWhat: {
+  mod: 'section--gray',
+  word: {
+    title: 'school',
+    mod: 'section__word--bottom-right'
+  },
+  img: '1.jpg',
+  imgTitle: {
+    title: 'Що таке школа альтернативного навчання АЗК?',
+    img: 'globe.svg',
+    mod: 'text-left'
+  },
+  text: '<p>Ми відійшли від загальноосвітньої системи класичного навчання, так як переосмислили сутність навчання, поглянули на процеси з іншого боку та винайшли оптимальний процес для цілісного розвитку особистості дитини в сучасному суспільстві. </p>
+
+          <p>Наша система освіти – це не просто освітні послуги, а й всебічний розвиток школярів. Наша філософія – це освічена, вихована дитина з високими моральними цінностями, вона наділена широким спектром  таких необхідних у наш час якостей характеру, як умінням цінувати і поважати не тільки себе, але й навколишній світ, людей, любов до ближнього, вміння шанувати батьків, доброта, співчуття, вміння нести відповідальність за свої вчинки 
+          і слова та багато інших. </p>',
+  btn: {
+    title: 'Більше про заклад'
+  },
+}
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
   {% include "partials/_hero.html" %}
   {% include "partials/sections/_s-features.html" %}
-  {% include "partials/sections/_s-what.html" %}
+
+  {% set sImg = sWhat %}
+  {% include "partials/sections/_s-img.html" %}
+
   {% include "partials/sections/_s-gallery-home.html" %}
   {% include "partials/sections/_s-news.html" %}
   {% include "partials/sections/_s-seo.html" %}

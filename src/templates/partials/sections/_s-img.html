@@ -1,0 +1,72 @@
+<!-- begin section -->
+<section class="section {% if sImg.mod %} {{ sImg.mod }}{% endif %}">
+  {% if sImg.word %}
+  <div class="section__word {{ sImg.word.mod }} word">{{ sImg.word.title | safe }}</div>
+  {% endif %}
+
+  <div class="container">
+    <div class="grid grid--align-items-center">
+      {% if sImg.left %}
+
+        <div class="col col--6">
+          {% if sImg.imgTitle %}
+            {{ mixins.title(
+              title = sImg.imgTitle.title,
+              img = sImg.imgTitle.img,
+              mod = sImg.imgTitle.mod
+            ) }}
+          {% endif %}
+
+          {% if sImg.title %}
+            <h2 class="section__title title title--h1 text-left">{{ sImg.title | safe }}</h2>
+          {% endif %}
+
+          <div class="article">
+            {{ sImg.text | safe }}
+
+            {{ mixins.btn(
+              title = sImg.btn.title,
+              mod = ''
+            ) }}
+          </div> 
+        </div>
+
+        <div class="col col--6">
+          {{ mixins.image(sImg.img) }}
+        </div>
+
+      {% else %}
+
+      
+        <div class="col col--6">
+          {{ mixins.image(sImg.img) }}
+        </div>
+
+        <div class="col col--6">
+          {% if sImg.imgTitle %}
+            {{ mixins.title(
+              title = sImg.imgTitle.title,
+              img = sImg.imgTitle.img,
+              mod = sImg.imgTitle.mod
+            ) }}
+          {% endif %}
+
+          {% if sImg.title %}
+            <h2 class="section__title title title--h1 text-left">{{ sImg.title | safe }}</h2>
+          {% endif %}
+
+          <div class="article">
+            {{ sImg.text | safe }}
+
+            {{ mixins.btn(
+              title = sImg.btn.title,
+              mod = ''
+            ) }}
+          </div>        
+        </div>
+
+      {% endif %}
+    </div>
+  </div>
+</section>
+<!-- end section -->
