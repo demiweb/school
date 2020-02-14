@@ -1,0 +1,20 @@
+.subscribe
+  &__title
+    margin-bottom: rem(25)
+
+.subscribe-form
+  display: flex
+  &__input, &__btn
+    width: calc(50% - #{rem(15)})
+  &__input
+    background-color: transparent
+    border: 0
+    border-bottom: 2px solid #ebebeb
+    height: rem(45)
+    padding: .3em 0
+    font-size: em(14)
+    margin-right: rem(15)
+    +placeholder
+      color: inherit    
+  &__btn
+    margin-left: rem(15)

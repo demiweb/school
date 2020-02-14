@@ -13,3 +13,14 @@
       @extend #{$this}__current-item
   &__current-item
     color: $accent
+
+  &--footer
+    font-size: inherit
+    font-weight: inherit
+    color: inherit
+    ul
+      display: block
+    li
+      +notlast
+        margin-bottom: rem(10)
+        

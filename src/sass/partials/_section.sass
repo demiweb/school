@@ -1,15 +1,29 @@
 .section
   padding-top: rem(75)
   padding-bottom: rem(90)
+  position: relative
   &__title
     text-align: center
     margin-bottom: rem(15)
   &__subttl
     text-align: center
     margin-bottom: rem(40)
+    margin-left: auto
+    margin-right: auto
+    max-width: 690px
   &__block
     &--lg
       margin-bottom: rem(80)
+  &__s-text
+    max-height: 455px
+  &__word
+    position: absolute
+    &--bottom-left
+      bottom: rem(20)
+      left: rem(30)
+    &--bottom-right
+      bottom: rem(20)
+      right: 0
 
   &--gray
     background-color: $light

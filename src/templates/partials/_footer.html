@@ -4,7 +4,7 @@ blocks = [
     title: 'Послуги',
     list: {
       name: 'nav',
-      mod: '',
+      mod: 'nav--footer',
       hasWrap: true,
       list: [
         { link: 'Початкова школа' },
@@ -16,8 +16,9 @@ blocks = [
   {
     title: 'Клієнтам',
     list: {
-      name: 'Контакти',
-      mod: '',
+      name: 'nav',
+      mod: 'nav--footer',
+      hasWrap: true,
       list: [
         { link: 'Про нас' },
         { link: 'Блог' },
@@ -26,7 +27,7 @@ blocks = [
     }
   },
   {
-    title: '',
+    title: 'Контакти',
     list: {
       name: '',
       hasWrap: true,
@@ -56,7 +57,7 @@ blocks = [
 
           {% for i in blocks %}
           <div class="footer__block">
-            <h5 class="footer__title title title--h5 title--reg">{{ i.title | safe }}</h5>
+            <h5 class="footer__title title title--h5 title--reg title--ttn">{{ i.title | safe }}</h5>
 
             {{ mixins.list(
               name = i.list.name,

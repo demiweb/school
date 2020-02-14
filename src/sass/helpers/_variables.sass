@@ -18,7 +18,15 @@ $light:   #f6f9fa
 
 
 $radius: 12px
+$radius-sm: 10px
 
 =windowHeight($offset: 0px)
   height: calc(100vh - #{$offset})
   height: calc((var(--vh, 1vh) * 100) - #{$offset})
+
+=shadow
+  box-shadow: 0px 1px 20px 0px rgba(35, 31, 32, 0.15)
+
+=gradient
+  background-color: $accent
+  background-image: linear-gradient(to top, rgb(132,184,71) 0%, rgb(165,217,53) 100%)
