@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="87.616" width="153.349">
+    <defs>
+        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+            <path d="M0 65.712h115.012V0H0z"/>
+        </clipPath>
+        <clipPath id="b" clipPathUnits="userSpaceOnUse">
+            <path d="M0 65.712h115.012V0H0z"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 87.616)">
+        <path d="M59.72 64.712v-5.977" fill="none" stroke="#17103c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    </g>
+    <path d="M83.61 5.318h-7.97" fill="none" stroke="#17103c" stroke-width="2.66666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    <g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 87.616)">
+        <path d="M1 1C3.007 3.007 5.836.179 7.843 2.186c2.008 2.008-.821 4.836 1.188 6.845 2.009 2.009 4.837-.82 6.846 1.189 2.009 2.009-.819 4.837 1.19 6.846 2.009 2.01 4.837-.819 6.846 1.19 2.01 2.01-.819 4.838 1.191 6.848 2.008 2.008 4.837-.82 6.845 1.188 2.01 2.01-.818 4.839 1.192 6.849 2.012 2.011 4.84-.817 6.852 1.195" fill="none" stroke="#f5ca33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+        <path d="M114.012 15.91l-7.333 4.234v-8.468z" fill="none" stroke="#17103c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    </g>
+</svg>
