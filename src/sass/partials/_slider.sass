@@ -1,0 +1,36 @@
+.slider
+  *
+    box-sizing: border-box
+  &__wrap
+    position: relative
+
+  &__controls
+    position: absolute
+    z-index: 1
+    top: 50%
+    left: 0
+    transform: translate(0, -50%)
+    width: 100%
+  &__prev, &__next
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $white
+    border-radius: 50%
+    width: rem(65)
+    height: rem(65)
+    position: absolute
+    top: 50%
+    .prev
+      margin-left: 1.2em
+    .next
+      margin-right: 1.2em
+    &.swiper-button-disabled
+      opacity: .5
+      pointer-events: none
+  &__prev
+    left: 0
+    transform: translate(-50%, -50%)
+  &__next
+    right: 0
+    transform: translate(50%, -50%)

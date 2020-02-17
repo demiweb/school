@@ -7,7 +7,7 @@
         <div class="swiper-wrapper slider slider--gallery js-lightgallery">
           {% for i in gallery.slider %}
           <a
-            href="./img/{{ i.img }}"
+            href="./img/gallery/{{ i.img }}"
             class="swiper-slide gallery__img js-lazy"
             data-background-image="./img/gallery/{{ i.img }}"
             ></a>
@@ -16,8 +16,8 @@
       </div>
 
       <div class="slider__controls">
-        <button class="slider__prev slider-prev js-slider-prev"></button>
-        <button class="slider__next slider-next js-slider-next"></button>
+        <button class="slider__prev slider-prev js-slider-prev"><i class="prev"></i></button>
+        <button class="slider__next slider-next js-slider-next"><i class="next"></i></button>
       </div>
     </div>
     <!-- end slider -->

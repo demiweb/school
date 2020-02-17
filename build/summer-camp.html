@@ -30,7 +30,7 @@
             </div>
           </div>
           <!-- begin nav -->
-          <nav class="nav header__nav">
+          <nav class="nav header__nav js-menu">
             <ul>
               <li class=" nav__current-item"><a href="#">Початкова школа</a></li>
               <li><a href="#">Середня школа</a></li>
@@ -67,7 +67,7 @@
                   <div class="hero__text">Запрошуємо хлопчиків та дівчаток до нашого дитячого літнього табору.</div>
                   <div class="hero__btns two-btns">
                     <div class="two-btns__btn">
-                      <a href="#" class="btn">Записати дитину</a>
+                      <button class="btn js-popup-open" data-popup-target="sign">Записати дитину</button>
                     </div>
                   </div>
                 </div>
@@ -230,7 +230,7 @@
                     </div>
                   </div>
                 </div>
-                <a href="#" class="btn">Зв’язатися з нами</a>
+                <button class="btn">Зв’язатися з нами</button>
               </div>
             </div>
           </div>
@@ -311,9 +311,9 @@
       </footer>
       <!-- end footer -->
       <!-- begin popup -->
-      <div class="popup">
+      <div class="popup js-popup" data-popup="sign">
         <div class="popup__inner">
-          <button class="popup__close close"></button>
+          <button class="popup__close close js-popup-close"></button>
           <!-- begin form -->
           <form class="form popup__form">
             <h2 class="form__title title title--h2 title--reg title--ttn">Запишіть дитину</h2>

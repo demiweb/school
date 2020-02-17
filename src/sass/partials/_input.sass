@@ -16,3 +16,52 @@
     left: 0
     z-index: 1
     fill: $accent
+
+.custom-select
+  $this: &
+  position: relative
+  text-align: left
+  user-select: none
+  select
+    opacity: 0
+    position: absolute
+    width: 0
+    height: 0
+  &--open
+    #{$this}__panel
+      +visible
+  &__opener
+    border-bottom: 1px solid currentColor
+    display: flex
+    align-items: center
+    padding: .3em 0
+    padding-left: 1.4em
+    height: rem(35)
+    position: relative
+    cursor: pointer
+    +before
+      +arr(1em, .5em, $accent, b)
+      position: absolute
+      z-index: 1
+      top: 50%
+      right: 0
+      transform: translate(0, -50%)
+  &__panel
+    position: absolute
+    top: 100%
+    left: 0
+    width: 100%
+    z-index: 5
+    +hidden
+    background-color: $white
+    border: 1px solid currentColor
+    border-top: 0
+  &__option
+    cursor: pointer
+    padding: rem(5)
+    +tr(color .3s, background-color .3s)
+    +hover
+      background-color: $light
+      color: $accent
+    &[data-value="placeholder"]
+      display: none

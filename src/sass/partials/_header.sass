@@ -59,11 +59,13 @@
       transform: translate(0, -100%)
       +vertical
       +ready
-        +tr(transform .5s $easeOutSine)
+        +tr(transform .5s $easeCustom)
       > ul
         font-size: rem(22)
         display: inline-block
         vertical-align: middle
+      &--open
+        transform: translate(0, 0)
   &__burger
     height: rem(50)
     display: flex
