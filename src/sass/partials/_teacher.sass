@@ -1,0 +1,26 @@
+.teacher
+  +shadow
+  background-color: $white
+  border-radius: $radius-sm
+  padding: rem(35)
+  display: flex
+  align-items: center
+  height: 100%
+  &__left, &__right
+    width: 50%
+  &__left
+    padding-right: $grid-gap / 2
+    padding-right: $half-gap
+    text-align: center
+  &__right
+    padding-left: $grid-gap / 2
+    padding-left: $half-gap
+  &__img
+    +cover
+    background-color: $c-text
+    border-radius: 50%
+    margin-bottom: rem(15)
+    height: rem(210)
+    width: rem(210)
+  &__title
+

@@ -1,0 +1,33 @@
+<!-- begin form -->
+<form class="form{% if form.mod %} {{ form.mod }}{% endif %}">
+  {% if form.title %}
+  <h2 class="form__title title title--h2 title--reg title--ttn">{{ form.title | safe }}</h2>
+  {% endif %}
+
+  {% if form.subttl %}
+  <div class="form__subttl">{{ form.subttl | safe }}</div>
+  {% endif %}
+
+  {% for i in form.fields %}
+  <div class="form__field">
+    {{ mixins.input(
+      name = i.name,
+      mod = i.mod,
+      type = i.type,
+      placeholder = i.placeholder,
+      value = '',
+      fieldClass = i.fieldClass,
+      fieldAttributes = i.fieldAttributes,
+      label = i.label,
+      options = i.options
+    ) }}
+  </div>
+  {% endfor %}
+
+  {{ mixins.btn(
+    title = 'Відправити',
+    mod = '',
+    href = false
+  ) }}
+</form>
+<!-- end form -->

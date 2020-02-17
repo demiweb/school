@@ -1,0 +1,66 @@
+{%set
+form = {
+  title: 'Запишіть дитину',
+  mod: 'popup__form',
+  subttl: 'Залиште ваші дані нижче та ми <br> зв’яжемося з вами у найближчий час',
+  fields: [
+    {
+      name: 'input',
+      mod: '',
+      type: 'text',
+      placeholder: 'Ваше ім’я',
+      value: '',
+      fieldClass: '',
+      fieldAttributes: '',
+      label: { first: mixins.icon('man-user', 'input__icon') }
+    },
+    {
+      name: 'input',
+      mod: '',
+      type: 'tel',
+      placeholder: '+38 (_ _ _) _ _ _ - _ _ - _ _',
+      value: '',
+      fieldClass: '',
+      fieldAttributes: '',
+      label: { first: mixins.icon('telephone', 'input__icon') }
+    },
+    {
+      name: 'select',
+      mod: '',
+      type: '',
+      placeholder: '',
+      value: '',
+      fieldClass: 'js-select',
+      fieldAttributes: '',
+      label: { first: mixins.icon('pencil-edit-button', 'input__icon') },
+      options: [
+        { value: 'placeholder', option: 'Оберіть форму навчання' },
+        { value: '1', option: 'форму навчання 1' },
+        { value: '2', option: 'форму навчання 2' },
+        { value: '3', option: 'форму навчання 3' },
+        { value: '4', option: 'форму навчання 4' }
+      ]
+    },
+    {
+      name: 'textarea',
+      mod: '',
+      type: '',
+      placeholder: 'Коротке повідомлення',
+      value: '',
+      fieldClass: 'js-textarea',
+      fieldAttributes: '',
+      label: { first: mixins.icon('message', 'input__icon') }
+    }
+  ]
+}
+%}
+
+<!-- begin popup -->
+<div class="popup">
+  <div class="popup__inner">
+    <button class="popup__close close"></button>
+
+    {% include "partials/_form.html" %}
+  </div>
+</div>
+<!-- end popup -->

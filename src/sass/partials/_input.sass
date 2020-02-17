@@ -1,0 +1,18 @@
+.input
+  color: $c-input
+  position: relative
+  #{$text-inputs}
+    width: 100%
+    border-bottom: 1px solid currentColor
+    height: rem(35)
+    padding: .3em 0
+    padding-left: 1.4em
+    +tr(border-color .3s)
+    &:focus
+      border-color: $accent
+  &__icon
+    position: absolute
+    top: .5em
+    left: 0
+    z-index: 1
+    fill: $accent

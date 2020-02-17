@@ -7,3 +7,7 @@ PageList:
 - file: blog.html
 - file: contacts.html
 - file: high-school.html
+- file: kindergarden.html
+- file: primary-school.html
+- file: summer-camp.html
+- file: teachers.html
