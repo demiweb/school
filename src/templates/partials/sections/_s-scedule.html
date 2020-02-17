@@ -2,7 +2,7 @@
 <section class="section">
   <div class="container">
     <div class="grid grid--align-items-center">
-      <div class="col col--6">
+      <div class="col col--sm-6">
         {% if sScedule.title %}
         <h2 class="section__title title title--h1 text-left">{{ sScedule.title | safe }}</h2>
         {% endif %}
@@ -21,7 +21,7 @@
         {% endif %}
       </div>
 
-      <div class="col col--6">
+      <div class="col col--sm-6">
         <blockquote class="blockquote">
           {{ mixins.list(
             name = 'scedule',

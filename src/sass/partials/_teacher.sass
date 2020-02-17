@@ -6,12 +6,22 @@
   display: flex
   align-items: center
   height: 100%
+  +lg
+    padding: rem(25)
+  +xs
+    display: block
   &__left, &__right
     width: 50%
+    +xs
+      width: 100%
+      padding-left: 0 !important
+      padding-right: 0 !important
   &__left
     padding-right: $grid-gap / 2
     padding-right: $half-gap
     text-align: center
+    +xs
+      margin-bottom: rem(15)
   &__right
     padding-left: $grid-gap / 2
     padding-left: $half-gap
@@ -22,5 +32,9 @@
     margin-bottom: rem(15)
     height: rem(210)
     width: rem(210)
-  &__title
+    margin-left: auto
+    margin-right: auto
+    +md
+      width: rem(180)
+      height: rem(180)
 

@@ -108,11 +108,18 @@
   &--sm
     #{$this}__wave
       width: percentage(1285 / 1920)
-      +smmin
-        background-size: rem(70) 105%
+      background-size: rem(70) 105%
+      +before
+        width: calc(100% - #{rem(70)})
+      +md
+        width: 100%
+        background-size: 105% rem(70)
         +before
-          width: calc(100% - #{rem(70)})
+          width: 100%
+          height: calc(100% - #{rem(65)})
 
     #{$this}__inner
       padding-top: rem(55)
       padding-bottom: rem(75)
+      +md
+        padding-bottom: rem(410)
