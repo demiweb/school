@@ -5,4 +5,5 @@ export default {
     burger: 'js-burger',
     menu: 'js-menu',
   },
+  parallax: 'js-parallax-scene',
 }

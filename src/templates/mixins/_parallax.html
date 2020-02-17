@@ -1,0 +1,7 @@
+{% macro parallax(mod, src, width) %}
+<div class="p-img {{ mod }} js-parallax-scene">
+  <div class="p-img__inner" data-depth="0.1">
+    <img class="p-img__img js-lazy" alt="" width="{{ width }}" src="" data-src="./img/{{ src }}"/>
+  </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="130.723" width="108.435">
+    <defs>
+        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+            <path d="M0 98.042h81.326V0H0z"/>
+        </clipPath>
+        <clipPath id="b" clipPathUnits="userSpaceOnUse">
+            <path d="M0 98.042h81.326V0H0z"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 130.723)">
+        <path d="M8.503 97.042v-5.977" fill="none" stroke="#bcbcbc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    </g>
+    <path d="M15.322 5.318h-7.97" fill="none" stroke="#bcbcbc" stroke-width="2.66666" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    <g clip-path="url(#b)" transform="matrix(1.33333 0 0 -1.33333 0 130.723)">
+        <path d="M11.561 6.28A5.281 5.281 0 101 6.282a5.281 5.281 0 0010.562 0z" fill="none" stroke="#91c53f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+        <path d="M41.334 43.032c2.007 2.007 4.836-.821 6.843 1.186 2.008 2.008-.821 4.836 1.188 6.845 2.009 2.009 4.837-.82 6.846 1.189 2.009 2.009-.82 4.837 1.19 6.846 2.009 2.01 4.837-.82 6.846 1.19 2.01 2.01-.82 4.838 1.19 6.848 2.009 2.008 4.838-.82 6.846 1.188 2.01 2.01-.818 4.839 1.192 6.849 2.012 2.01 4.84-.817 6.852 1.195" fill="none" stroke="#f5ca33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"/>
+    </g>
+</svg>

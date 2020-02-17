@@ -1,0 +1,15 @@
+.p-img
+  position: absolute
+  z-index: 0
+  pointer-events: none
+
+@for $i from 0 through 100
+  .p-img
+    &--right-#{$i}
+      right: percentage($i / 100)
+    &--left-#{$i}
+      left: percentage($i / 100)
+    &--top-#{$i}
+      top: percentage($i / 100)
+    &--bottom-#{$i}
+      bottom: percentage($i / 100)

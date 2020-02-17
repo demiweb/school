@@ -4,6 +4,15 @@
   <div class="section__word {{ sImg.word.mod }} word">{{ sImg.word.title | safe }}</div>
   {% endif %}
 
+  {% if sImg.left %}
+    {{ mixins.parallax('p-img--left-3 p-img--top-45 section__p-img-left-center', '02.svg') }}
+    {{ mixins.parallax('p-img--left-50 p-img--bottom-15', '02.svg') }}
+  {% else %}
+    {{ mixins.parallax('p-img--left-3 p-img--top-10', '02.svg') }}
+    {{ mixins.parallax('p-img--right-3 p-img--top-40', '02.svg') }}
+    {# {{ mixins.parallax('p-img--left-23 p-img--top-30 section__p-img-under-image', '02.svg') }} #}
+  {% endif %}
+
   <div class="container">
     <div class="grid grid--align-items-center">
       {% if sImg.left %}

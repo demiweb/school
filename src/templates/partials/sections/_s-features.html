@@ -112,7 +112,15 @@ features = [
 %}
 
 <!-- begin section -->
-<section class="section">
+<section class="section s-features">
+  {{ mixins.parallax('p-img--left-10 p-img--top-2', '02.svg') }}
+  {{ mixins.parallax('p-img--right-15 p-img--top-2', '03.svg') }}
+  {{ mixins.parallax('p-img--right-3 p-img--top-20', '04.png') }}
+  {{ mixins.parallax('p-img--left-1 p-img--top-30', '05.png') }}
+  {{ mixins.parallax('p-img--right-5 p-img--top-30', '06.png') }}
+  {{ mixins.parallax('p-img--right-5 p-img--bottom-30', '07.svg') }}
+  {{ mixins.parallax('p-img--left-3 p-img--bottom-15', 'dots.svg', '70') }}
+
   <div class="container">
 
     {{ mixins.title(

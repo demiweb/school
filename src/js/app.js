@@ -11,6 +11,7 @@ import classNames from './classNames'
 import sayHello from './lib/sayHello'
 import setHTMLClassNames from './components/setHTMLClassNames'
 import setLazy from './components/setLazy'
+import setParallax from './components/setParallax'
 
 import MaskedImage from './components/Image/MaskedImage'
 
@@ -49,6 +50,7 @@ class App {
       sayHello,
       setHTMLClassNames,
       setLazy,
+      setParallax,
     }
 
     Object.values(this.methods).forEach(fn => fn(this))

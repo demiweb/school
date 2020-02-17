@@ -1,5 +1,9 @@
 <!-- begin hero -->
 <section class="hero">
+  {% if page === 'home' %}
+  {{ mixins.parallax('p-img--left-5 p-img--top-5 hero__parallax-img', '01.svg') }}
+  {% endif %}
+
   <div class="hero__wave"></div>
 
   <div class="hero__bg js-lazy" data-background-image="./img/hero/{{ hero.bg }}"></div>

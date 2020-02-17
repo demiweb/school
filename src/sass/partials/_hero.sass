@@ -3,6 +3,16 @@
   position: relative
   .col
     position: relative
+  &__parallax-img   
+    z-index: 2 !important
+    .p-img__img
+      +rotate(-15)
+      width: rem(50)
+    +xl
+      left: 40%
+    +md
+      left: auto
+      right: 5%
   &__breadcrumbs
     padding-top: rem(25)
     position: relative
