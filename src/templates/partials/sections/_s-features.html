@@ -124,9 +124,9 @@ features = [
     <div class="section__subttl">Наша альтернативна школа – це школа повного дня, ми зустрічаємося з дітьми близько 8.30 ранку та кажемо: «До завтра» о 19.00. Оскільки у нашому розпорядженні цілий день, ми встигаємо не лише навчатися, а й відпочивати, гратися, проводити творчі заняття. </div>
     
     <div class="section__block section__block--lg">
-      <div class="grid">
+      <div class="grid grid--justify-content-center">
         {% for i in cards %}
-        <div class="col col--3">
+        <div class="col col--lg-3 col--md-4 col--xs-6">
           {{ mixins.card(
               title = i.title,
               img = i.img,

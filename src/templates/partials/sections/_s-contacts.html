@@ -1,6 +1,6 @@
 <!-- begin section -->
 <section class="s-contacts{% if sContacts.empty %} s-contacts--empty{% endif %}">
-  <iframe class="s-contacts__map js-lazy" src="" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3652522155503!2d30.50992231589771!3d50.50877039104175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d219ed91ef0f%3A0x59eeeda723ab37a0!2z0L_RgNC-0YHQvy4g0JPQtdGA0L7QtdCyINCh0YLQsNC70LjQvdCz0YDQsNC00LAsIDE00JMsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1581601486799!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  
   
   {% if not sContacts.empty %}
   <div class="container">
@@ -39,5 +39,9 @@
     </div>
   </div>
   {% endif %}
+
+  <div class="s-contacts__map">
+    <iframe class="js-lazy" src="" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3652522155503!2d30.50992231589771!3d50.50877039104175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d219ed91ef0f%3A0x59eeeda723ab37a0!2z0L_RgNC-0YHQvy4g0JPQtdGA0L7QtdCyINCh0YLQsNC70LjQvdCz0YDQsNC00LAsIDE00JMsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1581601486799!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
 </section>
 <!-- end section -->

@@ -2,20 +2,31 @@
   background-color: $light
   padding-top: rem(55)
   padding-bottom: rem(55)
+  +sm
+    padding-top: rem(40)
+    padding-bottom: rem(40)
   &__dots
     position: absolute
     top: .4rem
     left: 0
     opacity: .4
     width: rem(60)
+    +lg
+      display: none
   &__blocks
     position: relative
     padding-left: percentage(200 / 1410)
     display: flex
     flex-wrap: wrap
+    +lg
+      padding-left: 0
   &__block
     width: 33.33333%
     padding-right: rem(15)
+    +xs
+      width: 50%
+      +notlast
+        margin-bottom: rem(30)
   &__title
     margin-bottom: rem(20)
 
@@ -23,3 +34,4 @@
     text-align: center
     font-size: em(12)
     margin-top: rem(30)
+

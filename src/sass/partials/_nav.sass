@@ -4,9 +4,10 @@
   font-weight: 600
   color: $black
   ul
-    display: flex
-    align-items: center
-    justify-content: space-between
+    +lgmin
+      display: flex
+      align-items: center
+      justify-content: space-between
   a
     +tr(color .3s)
     +hover
@@ -19,7 +20,7 @@
     font-weight: inherit
     color: inherit
     ul
-      display: block
+      display: block !important
     li
       +notlast
         margin-bottom: rem(10)

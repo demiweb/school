@@ -1,11 +1,18 @@
 .subscribe
+  max-width: 450px
   &__title
     margin-bottom: rem(25)
+  &__form
+
 
 .subscribe-form
   display: flex
+  +xxs
+    display: block
   &__input, &__btn
     width: calc(50% - #{rem(15)})
+    +xxs
+      width: 100%
   &__input
     background-color: transparent
     border: 0
@@ -15,6 +22,11 @@
     font-size: em(14)
     margin-right: rem(15)
     +placeholder
-      color: inherit    
+      color: inherit
+    +xxs
+      margin-right: 0
+      margin-bottom: rem(15)
   &__btn
     margin-left: rem(15)
+    +xxs
+      margin-left: 0

@@ -3,12 +3,29 @@ html
   line-height: 1.5
   color: $c-text
   +reg
+  +xxs
+    font-size: 14px
 
 
 body
   background-color: $white  
   min-width: 320px  
-  +no-scroll  
+  +no-scroll
+
+.out
+  +lg
+    padding-top: rem(100)
+
+.grid
+  &--adaptive-gap
+    +lg
+      --grid-gap: #{rem(20)}
+    +md
+      --grid-gap: #{rem(15)}
+    +sm
+      --grid-gap: #{rem(10)}
+    +xs
+      --grid-gap: #{rem(6)}
 
 .icon
   display: inline-block
@@ -20,11 +37,21 @@ body
   &--loaded:not(#{$this}--no-fade-in)
     animation: fadeIn 1s
 
+.logo
+  display: inline-block
+  font-size: 0
+
 .two-btns
   display: flex
+  +xxs
+    display: block
+    text-align: center
   &__btn
     +notlast
       margin-right: rem(12)
+      +xxs
+        margin-right: 0
+        margin-bottom: rem(15)
 
 .next, .prev
   display: inline-block

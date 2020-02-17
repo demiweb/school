@@ -16,9 +16,9 @@
       <h2 class="section__title title title--h1">не пропустіть також</h2>
     {% endif %}
 
-    <div class="grid">
+    <div class="grid grid--adaptive-gap grid--justify-content-center">
       {% for i in range(0, 3) %}
-      <div class="col col--4">
+      <div class="col col--sm-4 col--6">
         {{ mixins.card(
           mod = 'card--left card--long',
           titleSm = 'Працьовита дитина — міф чи реальність в наш час?',

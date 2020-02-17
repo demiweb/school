@@ -4,13 +4,97 @@
   background-color: $white
   padding-bottom: rem(20)
   padding-bottom: rem(20)
+  +lg
+    background-color: #f6f9fa
+    padding-bottom: 0
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
   &__top
     margin-bottom: rem(10)
     position: relative
     text-align: center
+    +lg
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      height: rem(100)
+      margin-bottom: 0
   &__phone
-    position: absolute !important
-    right: 0
-    top: 50%
-    transform: translate(0, -50%)
+    +lgmin
+      position: absolute !important
+      right: 0
+      top: 50%
+      transform: translate(0, -50%)
+  &__logo-wrap
+    +lg
+      background-color: $white
+      height: rem(50)
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: rem(-15)
+      margin-right: rem(-15)
+      width: calc(100% + #{rem(30)})
+  &__logo
+    +xl
+      max-width: 700px
+    +lg
+      max-width: 370px
+    +xxs
+      max-width: 290px
+  &__nav
+    +lg
+      position: fixed
+      left: 0
+      top: 0
+      bottom: 0
+      right: 0
+      z-index: 10
+      background-color: $white
+      padding: rem(15)
+      overflow: auto
+      transform: translate(0, -100%)
+      +vertical
+      +ready
+        +tr(transform .5s $easeOutSine)
+      > ul
+        font-size: rem(22)
+        display: inline-block
+        vertical-align: middle
+  &__burger
+    height: rem(50)
+    display: flex
+    align-items: center
+    +lgmin
+      display: none
+
+.burger 
+  $this: &
+  display: flex
+  align-items: center
+  justify-content: center
+  width: rem(37)
+  height: rem(20)
+  position: relative
+  span
+    display: block
+    &, &::after, &::before
+      width: 100%
+      height: rem(4)
+      background-color: currentColor
+      backface-visibility: hidden
+      +tr(transform .3s)
+    &::after, &::before
+      content: ""
+      position: absolute
+      left: 0
+    &::after
+      top: 0
+    &::before
+      bottom: 0
+  &--active
+    z-index: 15
     

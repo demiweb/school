@@ -2,6 +2,18 @@
   padding-top: rem(75)
   padding-bottom: rem(90)
   position: relative
+  > .container
+    position: relative
+    z-index: 1
+  +lg
+    padding-top: rem(65)
+    padding-bottom: rem(75)
+  +md
+    padding-top: rem(55)
+    padding-bottom: rem(55)
+  +sm
+    padding-top: rem(45)
+    padding-bottom: rem(45)
   &__title
     text-align: center
     margin-bottom: rem(15)
@@ -25,7 +37,9 @@
     max-height: 455px
   &__word
     position: absolute
-    z-index: 1
+    z-index: 0
+    +xxs
+      display: none
     &--bottom-left
       bottom: rem(20)
       left: rem(30)

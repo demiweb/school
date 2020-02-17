@@ -1,6 +1,8 @@
 .hero
   $this: &
   position: relative
+  .col
+    position: relative
   &__breadcrumbs
     padding-top: rem(25)
     position: relative
@@ -12,30 +14,50 @@
     bottom: 0
     left: 0
     width: percentage(1035 / 1920)
-    +image('hero/wave.png')
+    +image('hero/wave-desc.png')
     background-repeat: no-repeat
-    background-position: 50% 100%
-    background-size: 105% rem(150)
+    background-position: 100% 50%
+    background-size: rem(150) 105%
     +before
       position: absolute
-      top: 0
+      bottom: 0
       left: 0
-      height: calc(100% - #{rem(145)})
+      top: 0
+      width: calc(100% - #{rem(145)})
       background-color: #f6f9fa
-    +smmin
-      +image('hero/wave-desc.png')
-      background-position: 100% 50%
-      background-size: rem(150) 105%
+    +xl
+      width: 57%
+    +md
+      +image('hero/wave.png')      
+      background-position: 50% 100%
+      background-size: 105% rem(150)
+      width: 100%
+      height: calc(100% - #{rem(250)})
       +before
-        bottom: 0
-        right: auto
-        height: auto
-        width: calc(100% - #{rem(145)})
+        position: absolute
+        left: 0
+        right: 0
+        bottom: auto
+        width: auto
+        height: calc(100% - #{rem(145)})
+        
 
   &__right-img
+    +md
+      position: absolute
+      left: 0
+      top: rem(30)
+      width: percentage(320 / 480)
+    +xxs
+      top: rem(50)
+    +r(375)
+      top: rem(100)
     &.lazy--loaded
       // display: block
       margin-left: -15%
+      +xl
+        margin-left: 0
+
   &__bg
     +coverdiv
     +cover
@@ -43,11 +65,17 @@
     background-color: $c-text
     z-index: 0
     left: 40%
+    +md
+      left: 0
+      top: calc(60% - #{rem(155)})
   &__inner
     position: relative
     z-index: 5
     padding-top: rem(90)
     padding-bottom: rem(175)
+    +md
+      padding-top: rem(30)
+      padding-bottom: rem(410)
   &__content-top-img
     display: block
     width: rem(50)
@@ -62,6 +90,8 @@
   &__text
     max-width: rem(540)
     margin-bottom: rem(15)
+    +lg
+      max-width: rem(500)
   &__img-bottom
     position: absolute
     bottom: 0

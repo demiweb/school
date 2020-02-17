@@ -15,7 +15,7 @@
 
     <div class="hero__inner">
       <div class="grid grid--align-items-center">
-        <div class="col col--7">
+        <div class="col col--md-7">
           {% if hero.topImg %}
           <img class="hero__content-top-img js-lazy" alt="" src="" data-src="./img/{{ hero.topImg }}"/>
           {% endif %}
@@ -25,12 +25,6 @@
           {% endif %}
 
           {% if hero.title %}
-          {#   {% if hero.h2 %}
-            <h2 class="hero__title title title--h1">{{ hero.title.title | safe }}</h2>
-            {% else %}
-            <h1 class="hero__title title title--h1">{{ hero.title.title | safe }}</h1>
-            {% endif %} #}
-
             <h1 class="hero__title title title--h1">{{ hero.title | safe }}</h1>
           {% endif %}
 
@@ -53,13 +47,13 @@
         </div>
 
         {% if hero.rightImage %}
-        <div class="col col--5">
+        <div class="col col--md-5">
           <img class="hero__right-img js-lazy" alt="" src="" data-src="./img/hero/{{ hero.rightImage }}"/>
         </div>
         {% endif %}
 
         {% if hero.contacts %}
-        <div class="col col--5">
+        <div class="col col--md-5">
           <div class="hero__contacts contacts">
             <div class="contacts__item contact-item">
               <div class="contact-item__icon">
