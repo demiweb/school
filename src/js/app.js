@@ -17,6 +17,7 @@ import setParallax from './components/setParallax'
 import setGallery from './components/setGallery'
 import setTextareaHeight from './components/setTextareaHeight'
 import setSelects from './components/Select/Select'
+import setScrollbar from './components/setScrollbar'
 
 import MaskedImage from './components/Image/MaskedImage'
 import Slider from './components/Slider/Slider'
@@ -69,6 +70,7 @@ class App {
       setGallery,
       setTextareaHeight,
       setSelects,
+      setScrollbar,
     }
 
     Object.values(this.methods).forEach(fn => fn(this))

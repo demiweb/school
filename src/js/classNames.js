@@ -5,6 +5,7 @@ export default {
   parallax: 'js-parallax-scene',
   select: 'js-select',
   textarea: 'js-textarea',
+  scrollbar: 'js-scrollbar',
   menu: {
     burger: 'js-burger',
     menu: 'js-menu',

@@ -115,6 +115,7 @@
     "parallax-js": "^3.1.0",
     "popup-simple": "^1.0.5",
     "select-custom": "^1.1.9",
+    "simplebar": "^5.1.0",
     "swiper": "^5.3.1",
     "throttle-debounce": "^2.1.0"
   }
